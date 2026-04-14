@@ -1,5 +1,5 @@
 package soal3;
-import java.util.*;
+import java.util.Scanner;
 
 public class Soal3 {
     
@@ -31,49 +31,49 @@ public class Soal3 {
     nama = input.next();
     System.out.print("Masukkan Ukuran Kaleng [Kecil|Sedang|Besar] : ");
     ukuran = input.next();
-    System.out.println("Harga satuan barang Rp. " +Hsusu);
-    System.out.print("Jumlah yang dibeli : ");
-    jbeli = input.nextInt();
-    
-    
+        
     switch (nama) {
-        case "dancow" :
-            if ("ukuran".equals("kecil")){
+        case "Dancow" :
+            if (ukuran.equals("kecil")){
                 Hsusu = 25000;
             }
-            else if ("ukuran".equals("sedang")){
+            else if (ukuran.equals("sedang")){
                 Hsusu = 20000;
             }
-            else if ("ukuran".equals("besar")){
+            else if (ukuran.equals("besar")){
                 Hsusu = 15000;
             }
             break;
             
         case "Bendera" :
-            if ("ukuran".equals("Kecil")){
+            if (ukuran.equals("Kecil")){
                 Hsusu = 20000;
             }
-            else if ("ukuran".equals("Sedang")){
+            else if (ukuran.equals("Sedang")){
                 Hsusu = 17500;
             }
-            else if ("ukuran".equals("Besar")){
+            else if (ukuran.equals("Besar")){
                 Hsusu = 13500;
             }
             break;    
             
         case "SGM" :
-            if ("ukuran".equals("Kecil")){
+            if (ukuran.equals("Kecil")){
                 Hsusu = 22000;
             }
-            else if ("ukuran".equals("Sedang")){
+            else if (ukuran.equals("Sedang")){
                 Hsusu = 18500;
             }
-            else if ("ukuran".equals("Besar")){
+            else if (ukuran.equals("Besar")){
                 Hsusu = 15000;
             }
             break;    
     }    
-    
+        
+    System.out.println("Harga satuan barang Rp. " +Hsusu);
+    System.out.print("Jumlah yang dibeli : ");
+    jbeli = input.nextInt();
+        
     total = jbeli * Hsusu;
             
     System.out.println("Harga yang harus dibayar sebesar Rp." +total);
